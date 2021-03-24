@@ -1,0 +1,911 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AppStack.template.json"
+      },
+      "metadata": {
+        "/AppStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65",
+              "id": "5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65",
+              "packaging": "zip",
+              "sourceHash": "5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65",
+              "s3BucketParameter": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65S3BucketE8372739",
+              "s3KeyParameter": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65S3VersionKeyA1A5D593",
+              "artifactHashParameter": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65ArtifactHashD2DD9CC4"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/private/tmp/app/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5",
+              "id": "6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5",
+              "packaging": "zip",
+              "sourceHash": "6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5",
+              "s3BucketParameter": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5S3BucketD4D454F8",
+              "s3KeyParameter": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5S3VersionKey4910FC68",
+              "artifactHashParameter": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5ArtifactHashDA802196"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/private/tmp/app/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/ordersQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ordersQueueD9D34795",
+            "trace": [
+              "new Queue (/private/tmp/app/node_modules/@aws-cdk/aws-sqs/lib/queue.ts:277:19)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:13:19)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/completedOrders/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "completedOrdersB55965AD",
+            "trace": [
+              "new Table (/private/tmp/app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1103:18)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:17:19)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/notifyFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "notifyFunctionServiceRoleBAB7968D",
+            "trace": [
+              "new Role (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:560:31)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/notifyFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "notifyFunctionB026CD96",
+            "trace": [
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:622:35)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65S3BucketE8372739",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65S3VersionKeyA1A5D593",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters5fd4506327f17b6a1cdd3334daded54873a412af21a7746843c7f996963e7e65ArtifactHashD2DD9CC4",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:21:28)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5S3BucketD4D454F8",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5S3VersionKey4910FC68",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/AssetParameters/6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters6d9acbbc27c4495af1e3d0b3df1fc1789d449ae816a370c3825da5eab455cdd5ArtifactHashDA802196",
+            "trace": [
+              "new FileAssetParameters (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AppStack.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/tmp/app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/private/tmp/app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:143:40)",
+              "AssetCode.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:580:29)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiC8550315",
+            "trace": [
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:694:22)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiCloudWatchRoleAC81D93E",
+            "trace": [
+              "new Role (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "RestApi.configureCloudWatchRole (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:494:18)",
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:711:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiAccount57E28B43",
+            "trace": [
+              "RestApi.configureCloudWatchRole (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:499:22)",
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:711:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeployment149F129441cf7cfe2dff8acc5e007e2810b00017",
+            "trace": [
+              "new Deployment (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:75:21)",
+              "RestApi.configureDeployment (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:510:32)",
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:714:10)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/DeploymentStage.dev/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeploymentStagedev96712F43",
+            "trace": [
+              "new Stage (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:240:22)",
+              "RestApi.configureDeployment (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:520:30)",
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:714:10)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpoint9349E63C",
+            "trace": [
+              "RestApi.configureDeployment (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:525:7)",
+              "new RestApi (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:714:10)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:30:17)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Default/GET/ApiPermission.AppStackapi7DFFE892.GET..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETApiPermissionAppStackapi7DFFE892GET29A6584F",
+            "trace": [
+              "Function.addPermission (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "RootResource.addMethod (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:36:14)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Default/GET/ApiPermission.Test.AppStackapi7DFFE892.GET..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETApiPermissionTestAppStackapi7DFFE892GETA80FB22F",
+            "trace": [
+              "Function.addPermission (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "RootResource.addMethod (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:36:14)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/api/Default/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiGETECF0BD67",
+            "trace": [
+              "new Method (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "RootResource.addMethod (/private/tmp/app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:36:14)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/subscribeFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "subscribeFunctionServiceRoleE1E26A6E",
+            "trace": [
+              "new Role (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:560:31)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/subscribeFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "subscribeFunctionServiceRoleDefaultPolicyA1C1D645",
+            "trace": [
+              "new Policy (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Queue.grant (/private/tmp/app/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:241:22)",
+              "Queue.grantConsumeMessages (/private/tmp/app/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:177:22)",
+              "SqsEventSource.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:45:16)",
+              "Function.addEventSource (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:672:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/subscribeFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "subscribeFunction1FA97757",
+            "trace": [
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:622:35)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/subscribeFunction/SqsEventSource:AppStackordersQueue4A337E63/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "subscribeFunctionSqsEventSourceAppStackordersQueue4A337E638764E6E1",
+            "trace": [
+              "new EventSourceMapping (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/event-source-mapping.ts:186:35)",
+              "Function.addEventSourceMapping (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:296:12)",
+              "SqsEventSource.bind (/private/tmp/app/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:38:39)",
+              "Function.addEventSource (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new Function (/private/tmp/app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:672:12)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:38:31)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/lambdaPublishToSqsPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaPublishToSqsPolicy8E5C3AB1",
+            "trace": [
+              "new Policy (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:51:45)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/lambdaWriteToDynamoDbPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaWriteToDynamoDbPolicyE545FD90",
+            "trace": [
+              "new Policy (/private/tmp/app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:62:48)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/ApiURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiURL",
+            "trace": [
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:73:5)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/ProjectRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProjectRegion",
+            "trace": [
+              "new AppStack (/private/tmp/app/lib/app-stack.ts:77:5)",
+              "Object.<anonymous> (/private/tmp/app/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/private/tmp/app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/private/tmp/app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/private/tmp/app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/private/tmp/app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/private/tmp/app/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/private/tmp/app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (/private/tmp/app/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/AppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/private/tmp/app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/private/tmp/app/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/private/tmp/app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (/private/tmp/app/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
