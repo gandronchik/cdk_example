@@ -1,5 +1,5 @@
 import { APIGatewayEvent } from 'aws-lambda'
-import * as AWS from 'aws-cdk'
+import * as AWS from 'aws-sdk'
 import Order from 'models/Order'
 
 const crypto = require("crypto")

@@ -1,5 +1,5 @@
 import { SQSEvent } from 'aws-lambda';
-import * as CDK from 'aws-cdk';
+import * as CDK from 'aws-sdk';
 import Order from 'models/Order';
 
 const docClient = new AWS.DynamoDB.DocumentClient()
